@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Arrays</title>
+</head>
+<body onload = "myFruits()">
+<p id = "para"></p>	
+
+<button id = "b" onclick = "myVeg()">Veg</button>
+<button id = "b2" onclick = "show()">push</button>
+	
+<script>
+var fruits = ["apple","orange","banana"];
+var veg = ["onions","potato"];
+
+function myFruits(){
+document.getElementById("para").innerHTML = fruits;
+}
+
+function myVeg(){
+document.getElementById("b").innerHTML = veg.length;
+}
+
+function show(){
+var get = prompt("Enter fruit:");
+fruits.push(get);
+document.getElementById("para").innerHTML = fruits;
+}
+</script>
+</body>
+</html>
